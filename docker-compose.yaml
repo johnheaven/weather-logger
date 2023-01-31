@@ -1,0 +1,11 @@
+services:
+    weather_to_bigquery:
+        build: .
+        environment:
+            OPEN_WEATHER_KEY: ${OPEN_WEATHER_KEY}
+            GCP_PROJ_ID: ${GCP_PROJ_ID}
+            TABLE_NAME: ${TABLE_NAME}
+            LATITUDE: ${LATITUDE}
+            LONGITUDE: ${LONGITUDE}
+        volumes:
+            - ${GCP_KEY_FILENAME}:/app/credentials.json
