@@ -4,6 +4,7 @@ services:
         environment:
             OPEN_WEATHER_KEY: ${OPEN_WEATHER_KEY}
             GCP_PROJ_ID: ${GCP_PROJ_ID}
+            GCP_KEY_FILENAME: ${GCP_KEY_FILENAME}
             TABLE_NAME: ${TABLE_NAME}
             LATITUDE: ${LATITUDE}
             LONGITUDE: ${LONGITUDE}
