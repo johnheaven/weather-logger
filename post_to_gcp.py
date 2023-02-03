@@ -4,7 +4,7 @@ from google.cloud import bigquery
 from google.oauth2 import service_account
 from os import environ as os_environ
 
-key_file = os_environ.get('GCP_KEY_FILENAME', '/app/credentials.json')
+key_file = '/app/credentials.json'
 
 open_weather_key = os_environ['OPEN_WEATHER_KEY']
 project_id = os_environ['GCP_PROJ_ID']
